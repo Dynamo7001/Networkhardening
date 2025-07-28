@@ -21,32 +21,75 @@ In this activity, you will write a security risk assessment to analyze the incid
 
 # **Security risk assessment report** 
 
-**Part 1: Select up to three hardening tools and methods to implement**
-After the recent breach that just happened, I discovered that some network hardening was not put in place, which allowed this breach to be successful. I recommend these four hardening tools and methods to be implemented to prevent this type of breach and unknown breaches in the future.
+# Network Hardening: Security Risk Assessment Report
 
-**Password policies:** This is the National Institute of Standards and Technology's (NIST) latest recommendations for password policies, focusing on using methods to salt and hash passwords, rather than requiring overly complex passwords or enforcing frequent changes to passwords. This can be done by setting rules of encryption immediately after a new user password is set.
+## Overview
+This report outlines critical vulnerabilities discovered following a major data breach at our organization and proposes essential network hardening techniques to prevent future incidents.
 
-**Network access privileges:** Network access privileges involve permitting, limiting, and/or blocking access privileges to network assets for people, roles, groups, IP addresses, MAC addresses, etc. This can be implemented for every employee based on their role in the organisation.
+---
 
-**Multifactor authentication (MFA):** A security measure that requires a user to verify their identity in two or more ways to access a system or network. MFA options include a password, PIN number, badge, one-time password (OTP) sent to a cell phone, fingerprint, and more. This helps to mitigate the risk of brute force attacks by threat actors. This should be compulsory for every employee by using their password and any biometric method (fingerprint, iris scan, or face scan). 
+## Part 1: Recommended Network Hardening Methods
 
-**Port filtering:** This is a firewall function that blocks or allows certain port numbers to limit unwanted communication. Port filtering rules need to be put in place in the firewall rules to filter unknown and not allowed ports from having access to the organization network. 
+To address the identified vulnerabilities and improve our network security posture, we recommend the following four hardening measures:
 
+### 1. Password Policy Enforcement (NIST Guidelines)
+Implement password policies aligned with the latest NIST SP 800-63B recommendations:
 
+- Eliminate frequent forced password changes (unless compromise is suspected).
+- Require passwords to be salted and hashed at creation.
+- Avoid complexity rules that encourage insecure workarounds.
+- Block commonly used or previously breached passwords.
 
-# **Part 2: Explain your recommendations**
+### 2. Role-Based Network Access Privileges
+Adopt the principle of least privilege using Role-Based Access Control (RBAC):
 
-I recommend these four implementations because of these reasons.
+- Assign permissions based on user roles and responsibilities.
+- Restrict access to critical systems (e.g., databases) to authorized users only.
+- Monitor and audit access logs regularly to detect anomalies.
 
-1. Password policies help to prevent attackers from easily guessing user passwords, either manually or by using a script to attempt thousands of stolen passwords (commonly called a brute force attack).
+### 3. Mandatory Multifactor Authentication (MFA)
+Implement MFA across the organization, especially for privileged accounts:
 
+- Use a combination of factors:
+  - **Something you know**: Password or PIN.
+  - **Something you have**: OTP via mobile app or hardware token.
+  - **Something you are**: Biometric data (e.g., fingerprint, facial recognition).
+- Require MFA at all remote access points and critical systems.
 
-2. Network access privileges help to reduce the risk of unauthorized users and outside traffic from accessing the internal network. This can be implemented once or revisited depending on the likelihood of social engineering or brute force attacks.
+### 4. Firewall Rule Configuration and Port Filtering
+Strengthen perimeter security by configuring firewall rules and filtering ports:
 
-3. Multifactor authentication (MFA) helps protect against brute force attacks and similar security events. MFA can be implemented at any time and is mostly a technique that is set up once and then maintained.
+- Block unused or insecure ports (e.g., Telnet, SMBv1).
+- Only allow necessary services and ports.
+- Monitor and log traffic for abnormal behavior or threats.
 
-4. Port filtering helps control network traffic and can prevent potential attackers from entering a private network.
+---
 
+## Part 2: Justification for Recommendations
 
+Each of the proposed methods addresses one or more of the vulnerabilities discovered during the network review:
+
+- **Password Policies:** Help defend against brute-force and credential stuffing attacks by ensuring passwords are not easily guessable or reused.
+- **Access Privileges:** Minimize the risk of insider threats and unauthorized access to sensitive systems.
+- **Multifactor Authentication:** Prevent unauthorized access even when login credentials are compromised.
+- **Firewall Rules & Port Filtering:** Limit the attack surface and control traffic flow, reducing exposure to external threats.
+
+---
+
+## Conclusion
+
+By adopting these hardening strategies, the organization can substantially enhance its cybersecurity defenses and reduce the likelihood of future data breaches.
+
+> ✅ It is critical that these measures be applied organization-wide and supported with security awareness training to ensure compliance and long-term protection.
+
+---
+
+## Author
+*Security Analyst, Cybersecurity Division*
+
+---
+
+## License
+This project documentation is released under the [MIT License](LICENSE).
 
 
