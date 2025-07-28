@@ -80,16 +80,8 @@ Each of the proposed methods addresses one or more of the vulnerabilities discov
 
 By adopting these hardening strategies, the organization can substantially enhance its cybersecurity defenses and reduce the likelihood of future data breaches.
 
-> ✅ It is critical that these measures be applied organization-wide and supported with security awareness training to ensure compliance and long-term protection.
+It is critical that these measures be applied organization-wide and supported with security awareness training to ensure compliance and long-term protection.
 
 ---
-
-## Author
-*Security Analyst, Cybersecurity Division*
-
----
-
-## License
-This project documentation is released under the [MIT License](LICENSE).
 
 
