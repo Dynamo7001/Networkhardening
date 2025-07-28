@@ -1,4 +1,4 @@
-# Networkhardening
+# Analysis of network hardening
 # **Scenario**
 
 **Review the following scenario. Then complete the step-by-step instructions.**
